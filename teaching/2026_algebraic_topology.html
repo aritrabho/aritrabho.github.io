@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			(function () {
+				console.log('Setting theme!');
+				const match = document.cookie.match(/(^| )theme=([^;]+)/);
+				let theme = 'dark';
+
+				if (match) {
+					theme = match[2];
+				} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					theme = 'dark';
+				}
+
+				if (theme === 'dark') {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+
+				if (!match) {
+					const oneYear = 60 * 60 * 24 * 365;
+					document.cookie = `theme=${theme}; max-age=${oneYear}; path=/`;
+				}
+			})();
+		</script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" />
+		
+		<link href="../_app/immutable/assets/0.BpeYxAM-.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.BDE4MeZz.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BmeHmKmD.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/G76aKHMA.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DB0w-lZp.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.0yh2rpws.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CuSejICy.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.f9OFhjdh.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CWh6S0L4.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bsp1pSDx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/X5Sv9yWS.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/PDEUfwqd.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Blb_pvds.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.Baf0DoMj.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/UoKuuSmD.js"><!--[--><link rel="icon" type="image/svg+xml" href="/cat.svg"/> <meta name="google-site-verification" content="qElwjJKVzrVMSDOv2MJLy74ZVGwe46Bo4ASlLEiPvzk"/> <link rel="canonical" href="https://aritra.ksom.res.in/"/><!--]--><!--[--><!--]--><title>Algebraic Topology II (KSM4E02)</title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><div class="flex min-h-screen flex-col bg-primary text-focus"><nav class="fixed top-0 z-50 w-screen bg-elevated shadow-md" aria-label="Navigation"><div class="mx-auto max-w-7xl px-2 transition-all sm:px-4 md:px-8 lg:px-10"><div class="relative flex h-16 flex-row items-center justify-center transition-all md:static md:justify-between md:px-0"><a href="/" class="px-5 text-xl font-bold text-nowrap transition-all md:self-auto md:px-0">Aritra Bhowmick</a> <div class="w-full"></div> <button class="cursor-pointer px-4 md:hidden" aria-label="Show navigation items"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="ml-2 h-4 w-4 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button> <ul class="hidden absolute top-16 w-dvw flex-col rounded-b-sm bg-elevated pb-2 font-medium text-link shadow-md shadow-cardshadow md:static md:top-0 md:flex md:h-full md:w-fit md:flex-row md:items-center md:gap-0 md:space-x-6 md:bg-transparent md:pb-0 md:shadow-none"><!--[--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[!--><a href="/#biography" title="Bio" aria-label="Bio" class="hover:text-hoverlink">Bio</a><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[!--><a href="/#education" title="Education" aria-label="Education" class="hover:text-hoverlink">Education</a><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[!--><a href="/#experience" title="Experience" aria-label="Experience" class="hover:text-hoverlink">Experience</a><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[--><button class="relative hidden flex-col md:flex" aria-label="Publications"><a href="/publications#published" class="hover:text-hoverlink">Publications</a> <!--[!--><!--]--></button> <div class="flex w-full flex-col items-center md:hidden"><a href="/publications#published" title="Publications" aria-label="Publications" class="text-link hover:text-hoverlink">Publications</a> <ul class="w-full pt-2"><!--[--><li class="flex justify-center"><a href="/publications#preprint" class="pt-2 text-sm font-thin text-nowrap text-link hover:text-hoverlink">Preprints</a></li><!--]--></ul></div><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[--><button class="relative hidden flex-col md:flex" aria-label="Teaching"><a href="/teaching" class="hover:text-hoverlink">Teaching</a> <!--[!--><!--]--></button> <div class="flex w-full flex-col items-center md:hidden"><a href="/teaching" title="Teaching" aria-label="Teaching" class="text-link hover:text-hoverlink">Teaching</a> <ul class="w-full pt-2"><!--[--><li class="flex justify-center"><a href="/teaching/2026_algebraic_topology#course_structure" class="pt-2 text-sm font-thin text-nowrap text-link hover:text-hoverlink">Algebraic Topology-II (KSM4E02)</a></li><!--]--></ul></div><!--]--></li> <!--[!--><!--]--><!--]--></ul> <button class="h-full cursor-pointer px-5 transition lg:px-10" aria-label="Toggle dark mode"><svg class="block h-4 w-4 justify-center fill-none stroke-black align-middle dark:hidden" version="1.1" viewBox="0 0 20 20"><path d="m18.004 9.9958a8 8 0 0 1-8-8 8 8 0 1 0 8 8z" clip-rule="evenodd" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg> <svg class="hidden h-4 w-4 justify-center stroke-focus align-middle dark:block" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m10 1v2m0 14v2m9-9h-2m-14 0h-2m15.364-6.364-1.414 1.414m-9.9 9.9-1.414 1.414m11.314-1.414 1.414 1.414m-11.314-11.314-1.414-1.414m6.364 2.364a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button></div></div></nav><!----> <main class="flex-grow"><!----><section id="course_structure" class="mt-20 scroll-m-20"><div class="mx-10 flex flex-col items-stretch"><div class="mt-5 mb-10 flex justify-center text-3xl font-bold underline">Algebraic Topology II (KSM4E02)</div> <div class="mt-5 mb-10 flex flex-col rounded-lg bg-elevated p-2 shadow-md shadow-cardshadow md:flex-row"><div class="mx-5 my-2 flex justify-center text-xl font-bold underline md:flex-col">Syllabus</div> <div class="mx-5 my-2 h-auto w-px bg-elevatedrule"></div> <div class="m-5 text-justify hyphens-auto">Simplicial and Singular Homology, Simplicial Homology, Singular Homology, Homotopy Invariance, Exact Sequences and Excision, The Equivalence of Simplicial and Singular Homology, Computations and Applications, Degree, Cellular Homology, Mayer-Vietoris Sequences, Homology with Coefficients. Cohomology Groups, The Universal Coefficient Theorem, Cohomology of Spaces, Cup Product, The Cohomology Ring, A Kunneth Formula, Spaces with Polynomial Cohomology, Poincar'{e} Duality, Orientations and Homology, The Duality Theorem, Connection with Cup Product, Other Forms of Duality, Universal Coefficients for Homology, The General Kunneth Formula.</div></div> <div class="mb-5 flex justify-center font-semibold underline">Course Breakdown</div> <div class="mb-5 flex flex-col justify-between gap-5 md:flex-row"><!--[--><a class="flex max-w-6xl flex-col rounded-md bg-elevated p-2 shadow-md shadow-cardshadow hover:cursor-pointer hover:bg-elevatedfocus" style="flex-basis: 15%"><div class="flex justify-center font-semibold">Project</div> <div class="flex justify-center font-thin">15%</div></a><a href="#assignments" class="flex max-w-6xl flex-col rounded-md bg-elevated p-2 shadow-md shadow-cardshadow hover:cursor-pointer hover:bg-elevatedfocus" style="flex-basis: 15%"><div class="flex justify-center font-semibold">Assignments</div> <div class="flex justify-center font-thin">15%</div></a><a href="#quizzes" class="flex max-w-6xl flex-col rounded-md bg-elevated p-2 shadow-md shadow-cardshadow hover:cursor-pointer hover:bg-elevatedfocus" style="flex-basis: 10%"><div class="flex justify-center font-semibold">Quizzes</div> <div class="flex justify-center font-thin">10%</div></a><a href="#exams" class="flex max-w-6xl flex-col rounded-md bg-elevated p-2 shadow-md shadow-cardshadow hover:cursor-pointer hover:bg-elevatedfocus" style="flex-basis: 20%"><div class="flex justify-center font-semibold">Mid-sem</div> <div class="flex justify-center font-thin">20%</div></a><a href="#exams" class="flex max-w-6xl flex-col rounded-md bg-elevated p-2 shadow-md shadow-cardshadow hover:cursor-pointer hover:bg-elevatedfocus" style="flex-basis: 40%"><div class="flex justify-center font-semibold">End-sem</div> <div class="flex justify-center font-thin">40%</div></a><!--]--></div></div></section> <section id="notes"><!--[!--><!--]--></section> <section id="assignments"><!--[!--><!--]--></section> <section id="quizzes"><!--[!--><!--]--></section> <section id="exams"><!--[!--><!--]--></section><!----><!----></main> <footer class="py-4 shadow-[0_-2px_6px_rgba(0,0,0,0.15)]"><div class="flex items-center justify-center gap-5"><span class="text-[8pt]">© Aritra Bhowmick</span> <span class="font-mono text-[8pt]">Last updated : Jan 3, 2026</span></div></footer></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_v3ji58 = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.BDE4MeZz.js"),
+						import("../_app/immutable/entry/app.0yh2rpws.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
