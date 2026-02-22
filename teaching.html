@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			(function () {
+				console.log('Setting theme!');
+				const match = document.cookie.match(/(^| )theme=([^;]+)/);
+				let theme = 'dark';
+
+				if (match) {
+					theme = match[2];
+				} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					theme = 'dark';
+				}
+
+				if (theme === 'dark') {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+
+				if (!match) {
+					const oneYear = 60 * 60 * 24 * 365;
+					document.cookie = `theme=${theme}; max-age=${oneYear}; path=/`;
+				}
+			})();
+		</script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" />
+		
+		<link href="./_app/immutable/assets/0.DsDaPrh9.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BL8hdmfc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ONg0Slv9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/xxUhmohM.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BHE2XOfm.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BLfIpeFf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/wVSGGaX8.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CbxmilFN.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BVeeXwMA.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/b5oUgAaX.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/X5Sv9yWS.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/PDEUfwqd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Blb_pvds.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.Cel_fw2b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DODiriPl.js"><!--[--><link rel="icon" type="image/svg+xml" href="/cat.svg"/> <meta name="google-site-verification" content="qElwjJKVzrVMSDOv2MJLy74ZVGwe46Bo4ASlLEiPvzk"/> <link rel="canonical" href="https://aritra.ksom.res.in/"/><!--]--><!--[--><!--]--><title>Courses</title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><div class="flex min-h-screen flex-col bg-primary text-focus"><nav class="fixed top-0 z-50 w-screen bg-elevated shadow-md" aria-label="Navigation"><div class="mx-auto max-w-7xl px-2 transition-all sm:px-4 md:px-8 lg:px-10"><div class="relative flex h-16 flex-row items-center justify-center transition-all md:static md:justify-between md:px-0"><a href="/" class="px-5 text-xl font-bold text-nowrap transition-all md:self-auto md:px-0">Aritra Bhowmick</a> <div class="w-full"></div> <button class="cursor-pointer px-4 md:hidden" aria-label="Show navigation items"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="ml-2 h-4 w-4 transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button> <ul class="hidden absolute top-16 w-dvw flex-col rounded-b-sm bg-elevated pb-2 font-medium text-link shadow-md shadow-cardshadow md:static md:top-0 md:flex md:h-full md:w-fit md:flex-row md:items-center md:gap-0 md:space-x-6 md:bg-transparent md:pb-0 md:shadow-none"><!--[--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[!--><a href="/#biography" title="Bio" aria-label="Bio" class="hover:text-hoverlink">Bio</a><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[!--><a href="/#education" title="Education" aria-label="Education" class="hover:text-hoverlink">Education</a><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[!--><a href="/#experience" title="Experience" aria-label="Experience" class="hover:text-hoverlink">Experience</a><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[--><button class="relative hidden flex-col md:flex" aria-label="Publications"><a href="/publications#published" class="hover:text-hoverlink">Publications</a> <!--[!--><!--]--></button> <div class="flex w-full flex-col items-center md:hidden"><a href="/publications#published" title="Publications" aria-label="Publications" class="text-link hover:text-hoverlink">Publications</a> <ul class="w-full pt-2"><!--[--><li class="flex justify-center"><a href="/publications#preprint" class="pt-2 text-sm font-thin text-nowrap text-link hover:text-hoverlink">Preprints</a></li><!--]--></ul></div><!--]--></li> <!--[--><div class="mx-10 flex h-px bg-elevatedrule md:hidden"></div><!--]--><li class="flex w-full justify-center px-4 py-2 md:w-fit md:p-0"><!--[--><button class="relative hidden flex-col md:flex" aria-label="Teaching"><a href="/teaching" class="hover:text-hoverlink">Teaching</a> <!--[!--><!--]--></button> <div class="flex w-full flex-col items-center md:hidden"><a href="/teaching" title="Teaching" aria-label="Teaching" class="text-link hover:text-hoverlink">Teaching</a> <ul class="w-full pt-2"><!--[--><li class="flex justify-center"><a href="/teaching/2026_algebraic_topology#course_structure" class="pt-2 text-sm font-thin text-nowrap text-link hover:text-hoverlink">Algebraic Topology-II (KSM4E02)</a></li><!--]--></ul></div><!--]--></li> <!--[!--><!--]--><!--]--></ul> <button class="h-full cursor-pointer px-5 transition lg:px-10" aria-label="Toggle dark mode"><svg class="block h-4 w-4 justify-center fill-none stroke-black align-middle dark:hidden" version="1.1" viewBox="0 0 20 20"><path d="m18.004 9.9958a8 8 0 0 1-8-8 8 8 0 1 0 8 8z" clip-rule="evenodd" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg> <svg class="hidden h-4 w-4 justify-center stroke-focus align-middle dark:block" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m10 1v2m0 14v2m9-9h-2m-14 0h-2m15.364-6.364-1.414 1.414m-9.9 9.9-1.414 1.414m11.314-1.414 1.414 1.414m-11.314-11.314-1.414-1.414m6.364 2.364a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button></div></div></nav><!----> <main class="flex-grow"><!----><section class="mt-20 flex scroll-m-20 justify-center" id="teaching"><div class="flex max-w-4xl flex-col items-center px-10"><div class="text-2xl font-bold underline">Courses</div> <!--[--><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2026</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>Instructor in</span> <!--[--><a class="mx-1 text-link hover:text-hoverlink hover:underline" href="/teaching/2026_algebraic_topology#course_structure">Algebraic Topology-II (KSM4E02)</a><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://ksom.res.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">KSoM</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2025</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>Instructor in</span> <!--[--><a class="mx-1 text-link hover:text-hoverlink hover:underline" href="/teaching/2025_topology#course_structure">Topology (KSM1C03)</a><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://ksom.res.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">KSoM</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2023</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>TA for Prof. Anandamohan Ghosh in</span> <!--[!--><span>MA1202</span><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://www.iiserkol.ac.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">IISER Kolkata</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2022</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>TA for Prof. Amit Ghosal in</span> <!--[!--><span>MA2103</span><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://www.iiserkol.ac.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">IISER Kolkata</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2019</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>TA for Prof Samik Basu in</span> <!--[!--><span>Algebraic Topology</span><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://www.isical.ac.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">ISI Kolkata</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2019</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>Tutor in</span> <!--[--><a class="mx-1 text-link hover:text-hoverlink hover:underline" href="https://www.ncmath.org/archives/atms/2019/ais/ht">AIS Homotopy Theory</a><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://www.isical.ac.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">ISI Kolkata</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2019</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>Tutor in</span> <!--[--><a class="mx-1 text-link hover:text-hoverlink hover:underline" href="https://www.atmschools.org/school/2023/AIS/hh">AIS Hochschild Homology</a><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://www.isical.ac.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">ISI Kolkata</a><!--]--></div></div><div class="m-3 flex w-full items-center rounded-xl bg-elevated p-2 shadow-lg"><div>2017</div> <div class="mx-4 h-full w-px bg-elevatedrule py-1"></div> <div><span>Tutor in</span> <!--[--><a class="mx-1 text-link hover:text-hoverlink hover:underline" href="https://www.ncmath.org/archives/atms/2017/ais/h-principle">AIS h-Principle</a><!--]--> <span>course.</span></div> <div class="mx-1 flex items-center"><div class="mx-1 h-4 [&amp;>svg]:h-full"><!----><?xml version="1.0" encoding="UTF-8"?>
+<svg fill="currentColor" viewBox="0 0 512.01 512.01">
+    <path d="m388.89 313.06c-11.435-2.773-22.955 4.373-25.664 15.829-2.731 11.456 4.373 22.955 15.829 25.664 66.261 15.723 90.283 38.976 90.283 50.795 0 25.493-85.077 64-213.33 64-128.24 0-213.33-38.507-213.33-64 0-11.819 24.043-35.072 90.261-50.795 11.477-2.709 18.56-14.208 15.829-25.664-2.709-11.456-14.229-18.603-25.664-15.829-79.381 18.816-123.09 51.584-123.09 92.288 0 70.016 128.81 106.67 256 106.67 127.21 0 256-36.651 256-106.67 0-40.704-43.712-73.472-123.12-92.288z"/>
+    <path d="m256.02 170.68c11.776 0 21.333-9.557 21.333-21.333s-9.557-21.333-21.333-21.333-21.333 9.557-21.333 21.333 9.557 21.333 21.333 21.333z"/>
+    <path d="m228.24 397.52 8.683 17.365c3.627 7.232 11.008 11.797 19.093 11.797s15.467-4.565 19.093-11.797l18.389-36.779c22.379-44.779 49.984-88.149 76.672-130.09l12.16-19.136c15.061-23.808 23.019-51.307 23.019-79.531 0-42.496-18.197-83.115-49.92-111.44-31.701-28.309-74.346-41.876-116.86-36.884-66.39 7.552-121.22 61.013-130.41 127.1-5.44 39.168 4.352 78.059 27.541 109.55 36.182 49.023 64.427 103.57 92.544 159.85zm27.776-312.17c35.285 0 64 28.715 64 64s-28.715 64-64 64-64-28.715-64-64 28.715-64 64-64z"/>
+</svg>
+<!----></div> <!--[--><a href="https://www.isical.ac.in/" class="mx-1 text-link hover:text-hoverlink hover:underline">ISI Kolkata</a><!--]--></div></div><!--]--></div></section><!----><!----></main> <footer class="py-4 shadow-[0_-2px_6px_rgba(0,0,0,0.15)]"><div class="flex items-center justify-center gap-5"><span class="text-[8pt]">© Aritra Bhowmick</span> <span class="font-mono text-[8pt]">Last updated : Feb 22, 2026</span></div></footer></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1jvh4dw = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BL8hdmfc.js"),
+						import("./_app/immutable/entry/app.BLfIpeFf.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
